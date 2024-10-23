@@ -1,0 +1,131 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%);
+font-size: 16px }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+    background-color: #f4d04e;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+p{
+    margin: 4px;
+}
+
+.card{
+    margin: 30px;
+    padding: 24px;
+    width: 380px;
+    height: 520px;
+    background-color: white;
+    border-radius: 20px;
+    outline: 1px solid black;
+    box-shadow: 10px 10px 0 black;
+}
+
+.card__content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card__texts{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card__category{
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    width: fit-content;
+    padding: 10px;
+    background-color: #f4d04e;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.card__date{
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 7%);
+}
+
+.card__title{
+    font-family: "Figtree", sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.card__title:hover{
+    color: #f4d04e;
+}
+
+.card__paragraph{
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(0, 0%, 42%);
+    text-align: left;
+}
+
+.card__creator{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+}
+.creator__img{
+    height: 32px;
+    width: 32px;
+}
+
+.creator__name{
+    font-family: "Figtree", sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+
+}
+
+@media (max-width: 480px) {
+    .card {
+      width: auto;
+      height: auto; /* Altura ajustável */
+      padding: 16px;
+      box-shadow: 5px 5px 0 black;
+    }
+  
+    .card__img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card__texts {
+      gap: 8px;
+    }
+  
+    .card__title {
+      font-size: 20px;
+    }
+  
+    .card__paragraph {
+      font-size: 14px;
+    }
+  
+  
+    .creator__img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .creator__name {
+      font-size: 12px;
+    }
+  }
